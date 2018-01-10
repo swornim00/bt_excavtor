@@ -47,6 +47,12 @@ void loop() {
     }else if(_buffer == 'L'){
       Serial.println("left");
       left();
+    }else if(_buffer == 'Something'){
+      rotate_base();  
+    }else if(_buffer == 'Something more'){
+      move_base_arm();
+    }else_if(_buffer== 'Something more and more'){
+      move_arm(); 
     }else{
       brake();
     }
@@ -93,3 +99,16 @@ void left(){
   digitalWrite(left_wheel_fwd, LOW);
   digitalWrite(left_wheel_bckwd, HIGH);
 }
+
+void rotate_base(){
+//Somethign  
+}
+
+void move_base_arm(){
+  // Something heretoo
+}
+
+void move_arm(){
+  //Something Seomthing
+}
+
